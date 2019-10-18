@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		575EEB4E2359D21A001EBF47 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575EEB4D2359D21A001EBF47 /* main.swift */; };
 		575EEB5B2359D25E001EBF47 /* TDD_Swift_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575EEB5A2359D25E001EBF47 /* TDD_Swift_Test.swift */; };
-		575EEB632359D4F0001EBF47 /* FizBuzz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575EEB622359D4F0001EBF47 /* FizBuzz.swift */; };
-		575EEB642359D69A001EBF47 /* FizBuzz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575EEB622359D4F0001EBF47 /* FizBuzz.swift */; };
+		575EEB632359D4F0001EBF47 /* FizzBuzz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575EEB622359D4F0001EBF47 /* FizzBuzz.swift */; };
+		57B0A60B235A369C009C5775 /* FizzBuzz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575EEB622359D4F0001EBF47 /* FizzBuzz.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,7 +31,7 @@
 		575EEB582359D25E001EBF47 /* TDD-Swift-Test.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TDD-Swift-Test.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		575EEB5A2359D25E001EBF47 /* TDD_Swift_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDD_Swift_Test.swift; sourceTree = "<group>"; };
 		575EEB5C2359D25E001EBF47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		575EEB622359D4F0001EBF47 /* FizBuzz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizBuzz.swift; sourceTree = "<group>"; };
+		575EEB622359D4F0001EBF47 /* FizzBuzz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzz.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				575EEB4D2359D21A001EBF47 /* main.swift */,
-				575EEB622359D4F0001EBF47 /* FizBuzz.swift */,
+				575EEB622359D4F0001EBF47 /* FizzBuzz.swift */,
 			);
 			path = "TDD-Swift";
 			sourceTree = "<group>";
@@ -177,7 +177,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				575EEB632359D4F0001EBF47 /* FizBuzz.swift in Sources */,
+				575EEB632359D4F0001EBF47 /* FizzBuzz.swift in Sources */,
 				575EEB4E2359D21A001EBF47 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -186,7 +186,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				575EEB642359D69A001EBF47 /* FizBuzz.swift in Sources */,
+				57B0A60B235A369C009C5775 /* FizzBuzz.swift in Sources */,
 				575EEB5B2359D25E001EBF47 /* TDD_Swift_Test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

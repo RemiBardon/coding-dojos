@@ -1,5 +1,5 @@
 //
-//  FizBuzz.swift
+//  FizzBuzz.swift
 //  TDD-Swift
 //
 //  Created by BARDON Rémi on 18/10/2019.
@@ -8,16 +8,16 @@
 
 import Foundation
 
-public class FizBuzz {
+public class FizzBuzz {
 	
 	public func resultat(pour nombre: Int) -> String {
 		var resultat = ""
 		
 		if nombre.estMultiple(de: 3) {
-			resultat += "fiz"
+			resultat += "Fizz"
 		}
 		if nombre.estMultiple(de: 5)  {
-			resultat += "buzz"
+			resultat += "Buzz"
 		}
 		if resultat == "" {
 			resultat = String(nombre)
