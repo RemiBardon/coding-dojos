@@ -11,19 +11,19 @@ import Foundation
 public class FizzBuzz {
 	
 	public func resultat(pour nombre: Int) -> String {
-		var resultat = ""
+		var res = ""
 		
 		if nombre.estMultiple(de: 3) {
-			resultat += "Fizz"
+			res += "Fizz"
 		}
 		if nombre.estMultiple(de: 5)  {
-			resultat += "Buzz"
+			res += "Buzz"
 		}
-		if resultat == "" {
-			resultat = String(nombre)
+		if res == "" {
+			res = String(nombre)
 		}
 		
-		return resultat
+		return res
 	}
 	
 	public func liste(jusqua nombre: Int) -> [String] {
