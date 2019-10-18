@@ -27,7 +27,15 @@ public class FizzBuzz {
 	}
 	
 	public func liste(jusqua nombre: Int) -> [String] {
-		return [ "1" ]
+		var resultat: [String] = []
+		
+		guard nombre >= 1 else { return resultat }
+		resultat.append("1")
+		
+		guard nombre >= 2 else { return resultat }
+		resultat.append("2")
+		
+		return resultat
 	}
 	
 }
