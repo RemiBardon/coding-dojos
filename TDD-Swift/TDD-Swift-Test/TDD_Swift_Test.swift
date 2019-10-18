@@ -109,5 +109,16 @@ class TDD_Swift_Test: XCTestCase {
 		let attendu: [String] = []
         XCTAssertEqual(resultat, attendu)
     }
+	
+    func test_fizzbuzz_liste_random() {
+		let fizzBuzz = FizzBuzz()
+		let valeurTestee = Int.random(in: 1...150)
+		let resultat = fizzBuzz.liste(jusqua: valeurTestee)
+		for _ in 0..<10 {
+			let indexTeste = Int.random(in: 1...valeurTestee)
+			let attendu: String = fizzBuzz.resultat(pour: indexTeste)
+			XCTAssertEqual(resultat[indexTeste-1], attendu)
+		}
+    }
 
 }
