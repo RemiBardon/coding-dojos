@@ -10,9 +10,9 @@ import Foundation
 
 class FizBuzz {
 	
-	private(set) public var resultat: String = ""
-	
-	init(_ nombre: Int) {
+	public func resultat(pour nombre: Int) -> String {
+		var resultat = ""
+		
 		let estMultipleDe3 = nombre % 3 == 0
 		let estMultipleDe5 = nombre % 5 == 0
 		
@@ -26,6 +26,8 @@ class FizBuzz {
 		} else {
 			resultat += String(nombre)
 		}
+		
+		return resultat
 	}
 	
 }
