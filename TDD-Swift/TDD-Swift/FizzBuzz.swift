@@ -29,14 +29,9 @@ public class FizzBuzz {
 	public func liste(jusqua nombre: Int) -> [String] {
 		var res: [String] = []
 		
-		guard nombre >= 1 else { return res }
-		res.append("1")
-		
-		guard nombre >= 2 else { return res }
-		res.append("2")
-		
-		guard nombre >= 3 else { return res }
-		res.append(resultat(pour: nombre))
+		for n in 1...nombre {
+			res.append(resultat(pour: n))
+		}
 		
 		return res
 	}
