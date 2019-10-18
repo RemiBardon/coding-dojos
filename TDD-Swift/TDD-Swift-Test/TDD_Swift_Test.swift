@@ -53,4 +53,9 @@ class TDD_Swift_Test: XCTestCase {
         XCTAssertEqual(resultat, "fizbuzz")
     }
 
+    func test_fizbuzz_45_renvoie_fizbuzz() {
+		let resultat = FizBuzz().resultat(pour: 45)
+        XCTAssertEqual(resultat, "fizbuzz")
+    }
+
 }
