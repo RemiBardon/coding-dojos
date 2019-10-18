@@ -8,26 +8,30 @@
 
 import Foundation
 
-class FizBuzz {
+public class FizBuzz {
 	
 	public func resultat(pour nombre: Int) -> String {
 		var resultat = ""
 		
-		let estMultipleDe3 = nombre % 3 == 0
-		let estMultipleDe5 = nombre % 5 == 0
-		
-		if estMultipleDe3 || estMultipleDe5 {
-			if estMultipleDe3 {
-				resultat += "fiz"
-			}
-			if estMultipleDe5 {
-				resultat += "buzz"
-			}
-		} else {
-			resultat += String(nombre)
+		if nombre.estMultiple(de: 3) {
+			resultat += "fiz"
+		}
+		if nombre.estMultiple(de: 5)  {
+			resultat += "buzz"
+		}
+		if resultat == "" {
+			resultat = String(nombre)
 		}
 		
 		return resultat
+	}
+	
+}
+
+fileprivate extension Int {
+	
+	func estMultiple(de diviseur: Int) -> Bool {
+		return self % diviseur == 0
 	}
 	
 }
