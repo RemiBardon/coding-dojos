@@ -13,6 +13,9 @@ public class FizzBuzz {
 	public func resultat(pour nombre: Int) -> String {
 		var res = ""
 		
+		if nombre == 0 {
+			return res
+		}
 		if nombre.estMultiple(de: 3) {
 			res += "Fizz"
 		}
