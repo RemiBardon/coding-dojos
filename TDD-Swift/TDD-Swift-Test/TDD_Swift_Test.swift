@@ -81,5 +81,23 @@ class TDD_Swift_Test: XCTestCase {
 		let attendu = [ "1", "2", "Fizz", "4", "Buzz" ]
         XCTAssertEqual(resultat, attendu)
     }
+	
+    func test_fizzbuzz_liste_jusqua_36() {
+		let resultat = FizzBuzz().liste(jusqua: 36)
+		let attendu = [ "1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz", "11", "Fizz", "13", "14", "FizzBuzz", "16", "17", "Fizz", "19", "Buzz", "Fizz", "22", "23", "Fizz", "Buzz", "26", "Fizz", "28", "29", "FizzBuzz", "31", "32", "Fizz", "34", "Buzz", "Fizz" ]
+        XCTAssertEqual(resultat, attendu)
+    }
+	
+    func test_fizzbuzz_liste_jusqua_0() {
+		let resultat = FizzBuzz().liste(jusqua: 0)
+		let attendu: [String] = []
+        XCTAssertEqual(resultat, attendu)
+    }
+	
+    func test_fizzbuzz_liste_jusqua_nombre_negatif() {
+		let resultat = FizzBuzz().liste(jusqua: -42)
+		let attendu: [String] = []
+        XCTAssertEqual(resultat, attendu)
+    }
 
 }
