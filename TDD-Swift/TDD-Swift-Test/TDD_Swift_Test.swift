@@ -57,5 +57,11 @@ class TDD_Swift_Test: XCTestCase {
 		let resultat = FizzBuzz().resultat(pour: 45)
         XCTAssertEqual(resultat, "FizzBuzz")
     }
+	
+    func test_fizzbuzz_liste_jusqua_1() {
+		let resultat = FizzBuzz().liste(jusqua: 1)
+		let attendu = [ "1" ]
+        XCTAssertEqual(resultat, attendu)
+    }
 
 }

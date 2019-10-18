@@ -26,6 +26,10 @@ public class FizzBuzz {
 		return resultat
 	}
 	
+	public func liste(jusqua nombre: Int) -> [String] {
+		return [ "1" ]
+	}
+	
 }
 
 fileprivate extension Int {
