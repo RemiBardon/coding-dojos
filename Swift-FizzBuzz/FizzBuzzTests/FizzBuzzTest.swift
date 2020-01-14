@@ -1,14 +1,15 @@
 //
-//  TDD_Swift_Test.swift
-//  TDD-Swift-Test
+//  FizzBuzzTest.swift
+//  FizzBuzzTests
 //
 //  Created by BARDON Rémi on 18/10/2019.
 //  Copyright © 2019 Rémi Bardon. All rights reserved.
 //
 
 import XCTest
+@testable import FizzBuzz
 
-class TDD_Swift_Test: XCTestCase {
+class FizzBuzzTest: XCTestCase {
 
 	let fizzBuzz = FizzBuzz()
 	

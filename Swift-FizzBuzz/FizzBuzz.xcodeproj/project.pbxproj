@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		575EEB4E2359D21A001EBF47 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575EEB4D2359D21A001EBF47 /* main.swift */; };
-		575EEB5B2359D25E001EBF47 /* TDD_Swift_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575EEB5A2359D25E001EBF47 /* TDD_Swift_Test.swift */; };
+		575EEB5B2359D25E001EBF47 /* FizzBuzzTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575EEB5A2359D25E001EBF47 /* FizzBuzzTest.swift */; };
 		575EEB632359D4F0001EBF47 /* FizzBuzz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575EEB622359D4F0001EBF47 /* FizzBuzz.swift */; };
 		57B0A60B235A369C009C5775 /* FizzBuzz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575EEB622359D4F0001EBF47 /* FizzBuzz.swift */; };
 /* End PBXBuildFile section */
@@ -26,10 +26,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		575EEB4A2359D21A001EBF47 /* TDD-Swift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "TDD-Swift"; sourceTree = BUILT_PRODUCTS_DIR; };
+		575EEB4A2359D21A001EBF47 /* FizzBuzz */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FizzBuzz; sourceTree = BUILT_PRODUCTS_DIR; };
 		575EEB4D2359D21A001EBF47 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		575EEB582359D25E001EBF47 /* TDD-Swift-Test.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TDD-Swift-Test.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		575EEB5A2359D25E001EBF47 /* TDD_Swift_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDD_Swift_Test.swift; sourceTree = "<group>"; };
+		575EEB582359D25E001EBF47 /* FizzBuzzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FizzBuzzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		575EEB5A2359D25E001EBF47 /* FizzBuzzTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzTest.swift; sourceTree = "<group>"; };
 		575EEB5C2359D25E001EBF47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		575EEB622359D4F0001EBF47 /* FizzBuzz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzz.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -55,8 +55,8 @@
 		575EEB412359D21A001EBF47 = {
 			isa = PBXGroup;
 			children = (
-				575EEB4C2359D21A001EBF47 /* TDD-Swift */,
-				575EEB592359D25E001EBF47 /* TDD-Swift-Test */,
+				575EEB4C2359D21A001EBF47 /* FizzBuzz */,
+				575EEB592359D25E001EBF47 /* FizzBuzzTests */,
 				575EEB4B2359D21A001EBF47 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,36 +64,36 @@
 		575EEB4B2359D21A001EBF47 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				575EEB4A2359D21A001EBF47 /* TDD-Swift */,
-				575EEB582359D25E001EBF47 /* TDD-Swift-Test.xctest */,
+				575EEB4A2359D21A001EBF47 /* FizzBuzz */,
+				575EEB582359D25E001EBF47 /* FizzBuzzTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		575EEB4C2359D21A001EBF47 /* TDD-Swift */ = {
+		575EEB4C2359D21A001EBF47 /* FizzBuzz */ = {
 			isa = PBXGroup;
 			children = (
 				575EEB4D2359D21A001EBF47 /* main.swift */,
 				575EEB622359D4F0001EBF47 /* FizzBuzz.swift */,
 			);
-			path = "TDD-Swift";
+			path = FizzBuzz;
 			sourceTree = "<group>";
 		};
-		575EEB592359D25E001EBF47 /* TDD-Swift-Test */ = {
+		575EEB592359D25E001EBF47 /* FizzBuzzTests */ = {
 			isa = PBXGroup;
 			children = (
-				575EEB5A2359D25E001EBF47 /* TDD_Swift_Test.swift */,
+				575EEB5A2359D25E001EBF47 /* FizzBuzzTest.swift */,
 				575EEB5C2359D25E001EBF47 /* Info.plist */,
 			);
-			path = "TDD-Swift-Test";
+			path = FizzBuzzTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		575EEB492359D21A001EBF47 /* TDD-Swift */ = {
+		575EEB492359D21A001EBF47 /* FizzBuzz */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 575EEB512359D21A001EBF47 /* Build configuration list for PBXNativeTarget "TDD-Swift" */;
+			buildConfigurationList = 575EEB512359D21A001EBF47 /* Build configuration list for PBXNativeTarget "FizzBuzz" */;
 			buildPhases = (
 				575EEB462359D21A001EBF47 /* Sources */,
 				575EEB472359D21A001EBF47 /* Frameworks */,
@@ -103,14 +103,14 @@
 			);
 			dependencies = (
 			);
-			name = "TDD-Swift";
+			name = FizzBuzz;
 			productName = "TDD-Swift";
-			productReference = 575EEB4A2359D21A001EBF47 /* TDD-Swift */;
+			productReference = 575EEB4A2359D21A001EBF47 /* FizzBuzz */;
 			productType = "com.apple.product-type.tool";
 		};
-		575EEB572359D25E001EBF47 /* TDD-Swift-Test */ = {
+		575EEB572359D25E001EBF47 /* FizzBuzzTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 575EEB5D2359D25E001EBF47 /* Build configuration list for PBXNativeTarget "TDD-Swift-Test" */;
+			buildConfigurationList = 575EEB5D2359D25E001EBF47 /* Build configuration list for PBXNativeTarget "FizzBuzzTests" */;
 			buildPhases = (
 				575EEB542359D25E001EBF47 /* Sources */,
 				575EEB552359D25E001EBF47 /* Frameworks */,
@@ -120,9 +120,9 @@
 			);
 			dependencies = (
 			);
-			name = "TDD-Swift-Test";
+			name = FizzBuzzTests;
 			productName = "TDD-Swift-Test";
-			productReference = 575EEB582359D25E001EBF47 /* TDD-Swift-Test.xctest */;
+			productReference = 575EEB582359D25E001EBF47 /* FizzBuzzTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -143,7 +143,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 575EEB452359D21A001EBF47 /* Build configuration list for PBXProject "TDD-Swift" */;
+			buildConfigurationList = 575EEB452359D21A001EBF47 /* Build configuration list for PBXProject "FizzBuzz" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -156,8 +156,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				575EEB492359D21A001EBF47 /* TDD-Swift */,
-				575EEB572359D25E001EBF47 /* TDD-Swift-Test */,
+				575EEB492359D21A001EBF47 /* FizzBuzz */,
+				575EEB572359D25E001EBF47 /* FizzBuzzTests */,
 			);
 		};
 /* End PBXProject section */
@@ -187,7 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				57B0A60B235A369C009C5775 /* FizzBuzz.swift in Sources */,
-				575EEB5B2359D25E001EBF47 /* TDD_Swift_Test.swift in Sources */,
+				575EEB5B2359D25E001EBF47 /* FizzBuzzTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,13 +335,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 5SYM9A33ZK;
-				INFOPLIST_FILE = "TDD-Swift-Test/Info.plist";
+				INFOPLIST_FILE = FizzBuzzTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.remibardon.TDD-Swift-Test";
+				PRODUCT_BUNDLE_IDENTIFIER = com.remibardon.FizzBuzzTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -353,13 +353,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 5SYM9A33ZK;
-				INFOPLIST_FILE = "TDD-Swift-Test/Info.plist";
+				INFOPLIST_FILE = FizzBuzzTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.remibardon.TDD-Swift-Test";
+				PRODUCT_BUNDLE_IDENTIFIER = com.remibardon.FizzBuzzTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -368,7 +368,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		575EEB452359D21A001EBF47 /* Build configuration list for PBXProject "TDD-Swift" */ = {
+		575EEB452359D21A001EBF47 /* Build configuration list for PBXProject "FizzBuzz" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				575EEB4F2359D21A001EBF47 /* Debug */,
@@ -377,7 +377,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		575EEB512359D21A001EBF47 /* Build configuration list for PBXNativeTarget "TDD-Swift" */ = {
+		575EEB512359D21A001EBF47 /* Build configuration list for PBXNativeTarget "FizzBuzz" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				575EEB522359D21A001EBF47 /* Debug */,
@@ -386,7 +386,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		575EEB5D2359D25E001EBF47 /* Build configuration list for PBXNativeTarget "TDD-Swift-Test" */ = {
+		575EEB5D2359D25E001EBF47 /* Build configuration list for PBXNativeTarget "FizzBuzzTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				575EEB5E2359D25E001EBF47 /* Debug */,

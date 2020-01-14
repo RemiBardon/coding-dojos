@@ -8,9 +8,9 @@ Pour les projets en Swift, il vous faudra disposer de macOS et XCode sur votre m
 
 ## Exercices
 
-|Date      |Sujet                                                                                            |Projet                |
-|---------:|-------------------------------------------------------------------------------------------------|----------------------|
-|18/10/2019|Application du TDD en Swift avec l'exemple de [FizzBuzz](https://en.wikipedia.org/wiki/Fizz_buzz)|[TDD-Swift](TDD-Swift)|
+|Date      |Langage|Sujet                                                                                            |Projet                          |
+|---------:|-------|-------------------------------------------------------------------------------------------------|--------------------------------|
+|18/10/2019|Swift  |Application du TDD en Swift avec l'exemple de [FizzBuzz](https://en.wikipedia.org/wiki/Fizz_buzz)|[Swift-FizzBuzz](Swift-FizzBuzz)|
 
 ## Auteurs
 
