@@ -25,6 +25,7 @@ public class RPNTests: XCTestCase {
 		addTests("20 5 /", expectedResult: 4, toTestSuite: testSuite)
 		addTests("15 3 /", expectedResult: 5, toTestSuite: testSuite)
 		addTests("15 3 +", expectedResult: 18, toTestSuite: testSuite)
+		addTests("20 5 -", expectedResult: 15, toTestSuite: testSuite)
         return testSuite
     }
 
