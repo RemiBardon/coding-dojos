@@ -24,6 +24,8 @@ public class RPN {
 			return e1 + e2
 		case "-":
 			return e1 - e2
+		case "*":
+			return e1 * e2
 		default:
 			fatalError("Invalid operator.")
 		}
