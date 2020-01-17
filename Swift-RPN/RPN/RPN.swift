@@ -16,11 +16,15 @@ public class RPN {
 	}
 	
 	private func compute(_ sequence: inout [String]) -> Int {
-		let op = sequence[2]
-		let e1 = Int(sequence[0])!
-		let e2 = Int(sequence[1])!
+		guard let operatorIndex = sequence.firstIndex(where: { ["/","+","-","*"].contains($0) }) else {
+			fatalError("No operator.")
+		}
 		
-		sequence.removeFirst(3)
+		let op = sequence[operatorIndex]
+		let e1 = Int(sequence[operatorIndex-2])!
+		let e2 = Int(sequence[operatorIndex-1])!
+		
+		sequence.removeSubrange(operatorIndex-2...operatorIndex)
 		
 		let result: Int
 		switch op {
@@ -39,7 +43,7 @@ public class RPN {
 		if sequence.isEmpty {
 			return result
 		} else {
-			sequence.insert(String(result), at: 0)
+			sequence.insert(String(result), at: operatorIndex-2)
 			return compute(&sequence)
 		}
 	}
