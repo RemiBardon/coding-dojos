@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		57CB3D4623D1D400003F1DD0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CB3D4523D1D400003F1DD0 /* main.swift */; };
+		57CB3D5323D1D538003F1DD0 /* RPNTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CB3D5223D1D538003F1DD0 /* RPNTests.swift */; };
+		57CB3D5923D1D551003F1DD0 /* RPN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CB3D5823D1D551003F1DD0 /* RPN.swift */; };
+		57CB3D5A23D1D551003F1DD0 /* RPN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CB3D5823D1D551003F1DD0 /* RPN.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +28,21 @@
 /* Begin PBXFileReference section */
 		57CB3D4223D1D400003F1DD0 /* RPN */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RPN; sourceTree = BUILT_PRODUCTS_DIR; };
 		57CB3D4523D1D400003F1DD0 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		57CB3D5023D1D538003F1DD0 /* RPNTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RPNTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		57CB3D5223D1D538003F1DD0 /* RPNTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPNTests.swift; sourceTree = "<group>"; };
+		57CB3D5423D1D538003F1DD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57CB3D5823D1D551003F1DD0 /* RPN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPN.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		57CB3D3F23D1D400003F1DD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57CB3D4D23D1D538003F1DD0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				57CB3D4423D1D400003F1DD0 /* RPN */,
+				57CB3D5123D1D538003F1DD0 /* RPNTests */,
 				57CB3D4323D1D400003F1DD0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				57CB3D4223D1D400003F1DD0 /* RPN */,
+				57CB3D5023D1D538003F1DD0 /* RPNTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +74,18 @@
 			isa = PBXGroup;
 			children = (
 				57CB3D4523D1D400003F1DD0 /* main.swift */,
+				57CB3D5823D1D551003F1DD0 /* RPN.swift */,
 			);
 			path = RPN;
+			sourceTree = "<group>";
+		};
+		57CB3D5123D1D538003F1DD0 /* RPNTests */ = {
+			isa = PBXGroup;
+			children = (
+				57CB3D5223D1D538003F1DD0 /* RPNTests.swift */,
+				57CB3D5423D1D538003F1DD0 /* Info.plist */,
+			);
+			path = RPNTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +108,23 @@
 			productReference = 57CB3D4223D1D400003F1DD0 /* RPN */;
 			productType = "com.apple.product-type.tool";
 		};
+		57CB3D4F23D1D538003F1DD0 /* RPNTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57CB3D5723D1D538003F1DD0 /* Build configuration list for PBXNativeTarget "RPNTests" */;
+			buildPhases = (
+				57CB3D4C23D1D538003F1DD0 /* Sources */,
+				57CB3D4D23D1D538003F1DD0 /* Frameworks */,
+				57CB3D4E23D1D538003F1DD0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RPNTests;
+			productName = RPNTests;
+			productReference = 57CB3D5023D1D538003F1DD0 /* RPNTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +136,9 @@
 				ORGANIZATIONNAME = "BARDON Rémi";
 				TargetAttributes = {
 					57CB3D4123D1D400003F1DD0 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					57CB3D4F23D1D538003F1DD0 = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
 				};
@@ -111,16 +157,37 @@
 			projectRoot = "";
 			targets = (
 				57CB3D4123D1D400003F1DD0 /* RPN */,
+				57CB3D4F23D1D538003F1DD0 /* RPNTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		57CB3D4E23D1D538003F1DD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		57CB3D3E23D1D400003F1DD0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57CB3D5923D1D551003F1DD0 /* RPN.swift in Sources */,
 				57CB3D4623D1D400003F1DD0 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57CB3D4C23D1D538003F1DD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57CB3D5A23D1D551003F1DD0 /* RPN.swift in Sources */,
+				57CB3D5323D1D538003F1DD0 /* RPNTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +329,42 @@
 			};
 			name = Release;
 		};
+		57CB3D5523D1D538003F1DD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5SYM9A33ZK;
+				INFOPLIST_FILE = RPNTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.remibardon.RPNTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		57CB3D5623D1D538003F1DD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5SYM9A33ZK;
+				INFOPLIST_FILE = RPNTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.remibardon.RPNTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -279,6 +382,15 @@
 			buildConfigurations = (
 				57CB3D4A23D1D400003F1DD0 /* Debug */,
 				57CB3D4B23D1D400003F1DD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57CB3D5723D1D538003F1DD0 /* Build configuration list for PBXNativeTarget "RPNTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57CB3D5523D1D538003F1DD0 /* Debug */,
+				57CB3D5623D1D538003F1DD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
