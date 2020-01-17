@@ -8,4 +8,8 @@
 
 import Foundation
 
-class RPN {}
+public class RPN {
+	
+	public func compute(_ string: String) -> Int { 4 }
+	
+}
