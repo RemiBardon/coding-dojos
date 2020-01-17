@@ -23,6 +23,7 @@ public class RPNTests: XCTestCase {
     override open class var defaultTestSuite: XCTestSuite {
         let testSuite = XCTestSuite(name: NSStringFromClass(self))
 		addTests("20 5 /", expectedResult: 4, toTestSuite: testSuite)
+		addTests("15 3 /", expectedResult: 5, toTestSuite: testSuite)
         return testSuite
     }
 

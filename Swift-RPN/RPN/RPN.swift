@@ -10,6 +10,9 @@ import Foundation
 
 public class RPN {
 	
-	public func compute(_ string: String) -> Int { 4 }
+	public func compute(_ string: String) -> Int {
+		let sequence = string.split(separator: " ")
+		return Int(String(sequence[0]))! / Int(String(sequence[1]))!
+	}
 	
 }
