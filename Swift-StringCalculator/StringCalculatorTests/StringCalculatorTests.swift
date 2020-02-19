@@ -7,27 +7,37 @@
 //
 
 import XCTest
+@testable import StringCalculator
 
 class StringCalculatorTests: XCTestCase {
 
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+	let calculator = StringCalculator()
+	
+	// Properties to save the test cases
+    private var input: String = ""
+    private var expectedResult: String = ""
+	
+	// This makes the magic: defaultTestSuite has the set of all the test methods in the current runtime
+    // so here we will create objects of StringCalculatorTests to call all the class' tests methods
+    // with differents values to test
+    override open class var defaultTestSuite: XCTestSuite {
+        let testSuite = XCTestSuite(name: NSStringFromClass(self))
+		addTests("", expectedResult: "0", toTestSuite: testSuite)
+        return testSuite
     }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        measure {
-            // Put the code you want to measure the time of here.
+	
+	// This is just to create the new StringCalculatorTests instance to add it into testSuite
+    private class func addTests(_ input: String, expectedResult: String, toTestSuite testSuite: XCTestSuite) {
+        testInvocations.forEach { invocation in
+            let testCase = StringCalculatorTests(invocation: invocation)
+            testCase.input = input
+            testCase.expectedResult = expectedResult
+            testSuite.addTest(testCase)
         }
+    }
+
+    public func testCompute() {
+        XCTAssertEqual(calculator.add(input), expectedResult)
     }
 
 }

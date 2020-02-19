@@ -11,7 +11,7 @@ import Foundation
 class StringCalculator {
 	
 	func add(_ numbers: String) -> String {
-		return ""
+		return "0"
 	}
 	
 }
