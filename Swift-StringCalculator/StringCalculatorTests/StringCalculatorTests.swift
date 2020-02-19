@@ -25,6 +25,7 @@ class StringCalculatorTests: XCTestCase {
 		addTests("", expectedResult: "0", toTestSuite: testSuite)
 		addTests("1", expectedResult: "1", toTestSuite: testSuite)
 		addTests("1.1,2.2", expectedResult: "3.3", toTestSuite: testSuite)
+		addTests(Array(repeating: "1.01", count: 20).joined(separator: ","), expectedResult: "20.2", toTestSuite: testSuite)
         return testSuite
     }
 	
