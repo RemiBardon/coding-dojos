@@ -10,8 +10,10 @@ import Foundation
 
 class StringCalculator {
 	
-	func add(_ numbers: String) -> String {
-		return "0"
+	func add(numbersIn input: String) -> String {
+		guard let _ = Float(input) else { return "0" }
+		
+		return input
 	}
 	
 }

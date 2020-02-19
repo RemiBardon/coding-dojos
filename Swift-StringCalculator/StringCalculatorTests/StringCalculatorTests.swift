@@ -23,6 +23,7 @@ class StringCalculatorTests: XCTestCase {
     override open class var defaultTestSuite: XCTestSuite {
         let testSuite = XCTestSuite(name: NSStringFromClass(self))
 		addTests("", expectedResult: "0", toTestSuite: testSuite)
+		addTests("1", expectedResult: "1", toTestSuite: testSuite)
         return testSuite
     }
 	
@@ -37,7 +38,7 @@ class StringCalculatorTests: XCTestCase {
     }
 
     public func testCompute() {
-        XCTAssertEqual(calculator.add(input), expectedResult)
+		XCTAssertEqual(calculator.add(numbersIn: input), expectedResult)
     }
 
 }
