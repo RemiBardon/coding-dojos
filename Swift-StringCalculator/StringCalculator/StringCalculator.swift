@@ -13,14 +13,13 @@ class StringCalculator {
 	typealias Number = Double
 	
 	func add(numbersIn input: String) -> String {
-		guard let numbers: [Number] = {
-			if input.contains(",") {
-				return input.split(separator: ",").map { Number($0)! }
-			} else if let number = Number(input) {
-				return [number]
-			}
-			return nil
-		}(), !numbers.isEmpty else { return "0" }
+		// Check for empty string
+		guard !input.isEmpty else { return "0" }
+		
+		// Split values
+		let numbers = input.split(whereSeparator: { [",", "\n"].contains($0) }).map { Number($0)! }
+		
+		// Calculate sum
 		return String(format: "%g", sum(numbers))
 	}
 	
