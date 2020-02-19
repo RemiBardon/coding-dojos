@@ -24,6 +24,7 @@ class StringCalculatorTests: XCTestCase {
         let testSuite = XCTestSuite(name: NSStringFromClass(self))
 		addTests("", expectedResult: "0", toTestSuite: testSuite)
 		addTests("1", expectedResult: "1", toTestSuite: testSuite)
+		addTests("1.1,2.2", expectedResult: "3.3", toTestSuite: testSuite)
         return testSuite
     }
 	
@@ -37,7 +38,7 @@ class StringCalculatorTests: XCTestCase {
         }
     }
 
-    public func testCompute() {
+    public func testAdd() {
 		XCTAssertEqual(calculator.add(numbersIn: input), expectedResult)
     }
 
