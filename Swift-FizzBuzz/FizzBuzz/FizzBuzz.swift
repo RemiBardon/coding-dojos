@@ -11,21 +11,18 @@ import Foundation
 public class FizzBuzz {
 	
 	public func resultat(pour nombre: Int) -> String {
-		var res = ""
+		guard nombre > 0 else { return "" }
 		
-		guard nombre > 0 else { return res }
-		
-		if nombre.estMultiple(de: 3) {
-			res += "Fizz"
+		switch (nombre.estMultiple(de: 3), nombre.estMultiple(de: 5)) {
+		case (true, true):
+			return "FizzBuzz"
+		case (true, false):
+			return "Fizz"
+		case (false, true):
+			return "Buzz"
+		case (false, false):
+			return String(nombre)
 		}
-		if nombre.estMultiple(de: 5)  {
-			res += "Buzz"
-		}
-		if res == "" {
-			res = String(nombre)
-		}
-		
-		return res
 	}
 	
 	public func liste(jusqua nombre: Int) -> [String] {

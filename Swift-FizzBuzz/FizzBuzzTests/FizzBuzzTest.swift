@@ -12,14 +12,6 @@ import XCTest
 class FizzBuzzTest: XCTestCase {
 
 	let fizzBuzz = FizzBuzz()
-	
-	override func setUp() {
-		// Put setup code here. This method is called before the invocation of each test method in the class.
-	}
-
-	override func tearDown() {
-		// Put teardown code here. This method is called after the invocation of each test method in the class.
-	}
 
 	func test_fizzbuzz_random() {
 		var valeurTestee = 0
