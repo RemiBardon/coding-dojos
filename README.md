@@ -8,12 +8,13 @@ Pour les projets en Swift, il vous faudra disposer de macOS et XCode sur votre m
 
 ## Exercices
 
-|Date      |Langage|Sujet                                                                                            |Projet                            |
-|---------:|:-----:|-------------------------------------------------------------------------------------------------|----------------------------------|
-|18/10/2019|Swift  |Application du TDD en Swift avec l'exemple de [FizzBuzz](https://en.wikipedia.org/wiki/Fizz_buzz)|[Swift-FizzBuzz](Swift-FizzBuzz)  |
-|09/01/2020|Rust   |Découverte du TDD en Rust avec [FooBarQix](http://codingdojo.org/kata/FooBarQix/)                |*Indisponible*                    |
-|14/01/2020|Swift  |Traduction de notre solution Rust de [FooBarQix](http://codingdojo.org/kata/FooBarQix/) en Swift |[Swift-FooBarQix](Swift-FooBarQix)|
-|16/01/2020|Swift  |TDD en Swift avec [RPN Calculator](http://codingdojo.org/kata/RPN/)                              |[Swift-RPN](Swift-RPN)            |
+|Date      |Langage|Sujet                                                                                            |Projet                                          |
+|---------:|:-----:|-------------------------------------------------------------------------------------------------|------------------------------------------------|
+|18/10/2019|Swift  |Application du TDD en Swift avec l'exemple de [FizzBuzz](https://en.wikipedia.org/wiki/Fizz_buzz)|[Swift-FizzBuzz](Swift-FizzBuzz)                |
+|09/01/2020|Rust   |Découverte du TDD en Rust avec [FooBarQix](http://codingdojo.org/kata/FooBarQix/)                |*Indisponible*                                  |
+|14/01/2020|Swift  |Traduction de notre solution Rust de [FooBarQix](http://codingdojo.org/kata/FooBarQix/) en Swift |[Swift-FooBarQix](Swift-FooBarQix)              |
+|16/01/2020|Swift  |TDD en Swift avec [RPN Calculator](http://codingdojo.org/kata/RPN/)                              |[Swift-RPN](Swift-RPN)                          |
+|19/02/2020|Swift  |TDD en Swift avec [String Calculator](http://codingdojo.org/kata/StringCalculator/)              |[Swift-StringCalculator](Swift-StringCalculator)|
 
 ## Auteurs
 

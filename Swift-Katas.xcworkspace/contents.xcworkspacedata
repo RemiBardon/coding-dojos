@@ -10,4 +10,7 @@
    <FileRef
       location = "group:Swift-RPN/RPN.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:Swift-StringCalculator/StringCalculator.xcodeproj">
+   </FileRef>
 </Workspace>
